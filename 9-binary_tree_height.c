@@ -14,6 +14,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 		return (0);
 
 	return (maxDepth(tree) - 1);
+}
 
 /**
  * * maxDepth - measures the height of a binary tree
@@ -36,4 +37,5 @@ int maxDepth(const binary_tree_t *node)
 		return (lDepth + 1);
 	else
 		return (rDepth + 1);
+	}
 }
